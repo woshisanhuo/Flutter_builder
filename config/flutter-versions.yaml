@@ -1,0 +1,40 @@
+# Flutter 版本配置
+# 列出了常用的一些稳定版本
+# more： https://docs.flutter.dev/install/archive
+versions:
+  - flutter: "3.24.0"
+    dart: "3.5.0"
+    release_date: "2024-05-01"
+
+  - flutter: "3.22.0"
+    dart: "3.4.0"
+    release_date: "2024-03-01"
+
+  - flutter: "3.19.0"
+    dart: "3.3.0"
+    release_date: "2024-02-01"
+
+  - flutter: "3.16.0"
+    dart: "3.2.0"
+    release_date: "2023-11-01"
+
+  - flutter: "3.13.0"
+    dart: "3.1.0"
+    release_date: "2023-08-01"
+
+  - flutter: "3.10.0"
+    dart: "3.0.0"
+    release_date: "2023-05-01"
+
+  - flutter: "3.7.0"
+    dart: "3.0.0"
+    release_date: "2023-03-01"
+
+  - flutter: "3.3.0"
+    dart: "2.18.0"
+    release_date: "2022-08-01"
+
+# 默认版本
+default:
+  flutter: "3.24.0"
+  dart: "3.5.0"
