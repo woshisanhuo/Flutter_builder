@@ -46,11 +46,11 @@ if [ "$BUILD_MODE" = "release" ]; then
     echo "执行 Release 编译..."
     # Release 模式需要额外配置以保留符号表
     # Flutter release 默认会 strip 符号，我们使用 debuggable 编译保留符号
-    flutter build apk --release --no-tree-shake-icons --dart-define=android.strip=false
+    flutter build apk --release --no-tree-shake-icons --dart-define=android.strip=false --no-shrink
 else
     echo "执行 Debug 编译（保留符号表）..."
     # Debug 模式默认保留符号表
-    flutter build apk --debug --no-tree-shake-icons --dart-define=android.strip=false
+    flutter build apk --debug --no-tree-shake-icons --dart-define=android.strip=false --no-shrink
 fi
 
 # 查找生成的 APK
